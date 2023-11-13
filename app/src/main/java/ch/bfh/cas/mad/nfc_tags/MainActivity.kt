@@ -18,6 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import ch.bfh.cas.mad.nfc_tags.ui.theme.NfctagsTheme
 
@@ -74,6 +75,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @Composable
+    fun Heading(text: String) {
+        Text(text = text, fontSize = 30.sp)
+    }
 
     @Composable
     fun WriteResult(writeResult: WriteResult?) {
