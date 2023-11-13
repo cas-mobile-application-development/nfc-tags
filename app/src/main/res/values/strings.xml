@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">nfc-tags</string>
+    <string name="title_activity_nfc">NfcActivity</string>
+</resources>
